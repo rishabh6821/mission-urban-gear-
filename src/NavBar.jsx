@@ -1,3 +1,5 @@
+import CARTimg from './assets/cart-icon-main-sssss.png';
+
 const listLinks = {
     apparel: {
         name: "Apparel",
@@ -21,7 +23,7 @@ export default function NavBar() {
     return (
         <nav className="navbar">
             <div className="logo">URBAN<span>
-                GEAR</span></div>
+                {'Accessories'.toUpperCase()} </span></div>
             <ul className="nav-links">
               {Object.entries(listLinks).map(([key, { name, link }]) => (
                 <li key={key}>
@@ -30,7 +32,8 @@ export default function NavBar() {
               ))}
             </ul>
             <button className="cart-btn">
-                Cart (0)
+                <img src={CARTimg} alt="Damn it" />
+                {/* Cart (0) */}
             </button>
         </nav>
     );
