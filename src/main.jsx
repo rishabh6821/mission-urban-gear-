@@ -4,10 +4,12 @@ import './index.css'
 import App from './App.jsx'
 import NavBar from '../src/NavBar.jsx'
 import Footer from '../src/Footer.jsx'
+import Notify from './notify.jsx'
 
 createRoot(document.getElementById('nav-bar')).render(
     <StrictMode>
-        <NavBar></NavBar>
+        <NavBar></NavBar>            
+        <Notify></Notify>
     </StrictMode>
 )
 
@@ -23,6 +25,8 @@ createRoot(document.getElementById('footer')).render(
         <Footer />
     </StrictMode>
 )
+
+
 
 
 {
